@@ -1,8 +1,8 @@
-import routerx from 'express-promise-router'
-import todoRouter from './todo-router'
+import routerx from 'express-promise-router';
+import todoRouter from './todo-router';
 
-const router = routerx()
+const router = routerx();
 
-router.use('/todo', todoRouter)
+router.use('/todo', todoRouter);
 
-export default router
+export default router;

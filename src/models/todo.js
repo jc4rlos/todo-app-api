@@ -1,4 +1,4 @@
-import { model, Schema } from 'mongoose'
+import { model, Schema } from 'mongoose';
 
 const ToDoSchema = new Schema(
   {
@@ -21,9 +21,9 @@ const ToDoSchema = new Schema(
   },
   {
     versionKey: false,
-  },
-)
+  }
+);
 
-const ToDo = model('todo', ToDoSchema)
+const ToDo = model('todo', ToDoSchema);
 
-export default ToDo
+export default ToDo;

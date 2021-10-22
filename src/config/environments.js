@@ -1,6 +1,6 @@
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 
-dotenv.config()
+dotenv.config();
 
 export const env = {
   PORT: process.env.PORT,
@@ -9,4 +9,4 @@ export const env = {
   MONGO_DB_USER: process.env.MONGO_DB_USER,
   MONGO_DB_PASSWORD: process.env.MONGO_DB_PASSWORD,
   MONGO_DB_PORT: process.env.MONGO_DB_PORT,
-}
+};
