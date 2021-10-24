@@ -1,10 +1,6 @@
-import express from 'express';
 import { env } from './config/environments';
-import router from './routes/routers';
-import './config/database';
+import buildApp from './app';
 
-const app = express();
+const express = buildApp();
 
-app.use(express.json({ extended: true }));
-app.use('/api', router);
-app.listen(env.PORT);
+express.listen(env.PORT);

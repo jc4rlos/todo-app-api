@@ -1,0 +1,34 @@
+GET http://localhost:3050/api/todo?page=6&size=2
+
+###
+
+GET http://localhost:3050/api/todo/61743866f57304317dd2e48f
+
+###
+
+POST http://localhost:3050/api/todo HTTP/1.1
+content-type: application/json
+
+{
+    "title": "xd",
+    "description": "description",
+    "color": "#dddddd",
+    "done": false
+}
+
+###
+
+PUT http://localhost:3050/api/todo/61743866f57304317dd2e48f HTTP/1.1
+content-type: application/json
+
+{
+    "_id":"61743866f57304317dd2e48f",
+    "title": "xd",
+    "description": "description",
+    "color": "#dddddd",
+    "done": false
+}
+
+###
+
+DELETE  http://localhost:3050/api/todo/61743866f57304317dd2e48f

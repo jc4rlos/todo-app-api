@@ -10,7 +10,7 @@
       "node": true,
       "browser" : true
     },
-    "extends": ["airbnb-base", "prettier", "plugin:node/recommended"],
+    "extends": ["airbnb-base", "prettier"],
     "globals": {
       "Atomics": "readonly",
       "SharedArrayBuffer": "readonly"

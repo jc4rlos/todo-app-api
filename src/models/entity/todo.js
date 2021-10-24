@@ -1,4 +1,5 @@
 import { model, Schema } from 'mongoose';
+import mongoosePaginate from 'mongoose-paginate-v2';
 
 const ToDoSchema = new Schema(
   {
@@ -21,8 +22,11 @@ const ToDoSchema = new Schema(
   },
   {
     versionKey: false,
+    timestamps: true,
   }
 );
+
+ToDoSchema.plugin(mongoosePaginate);
 
 const ToDo = model('todo', ToDoSchema);
 
